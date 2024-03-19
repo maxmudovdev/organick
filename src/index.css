@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("./assets/fonts//Roboto/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-medium";
+  src: url("./assets/fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url("./assets/fonts/Yellowtail/Yellowtail-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1460px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+#nav a:hover {
+  color: #000000;
+}
+
+#nav a.active {
+  color: #08993b;
+  border-bottom: 2px solid #4ed47d;
+}
+.twitter:hover {
+  cursor: pointer;
+}
+
+#twitter:hover {
+  background: #24a3f1;
+  cursor: pointer;
+}
+#twitter:hover .twitter path {
+  fill: white;
+}
+
+#facebook:hover {
+  background: #1f7bf2;
+  cursor: pointer;
+}
+#facebook:hover .facebook path {
+  fill: white;
+}
+
+#pinterest:hover {
+  background: #e70821;
+  cursor: pointer;
+}
+#pinterest:hover .pinterest path {
+  fill: white;
+}
+
+#instagram:hover {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+  cursor: pointer;
+}
+#instagram:hover .instagram path {
+  fill: white;
+}
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 4444;
+}
+
+#special_cards:hover #special_images {
+  transition: all 0.1s ease-out;
+  transform: scale(1.05);
+}
+
+#special_cards:hover {
+  background: #f1f1f1;
+}
+
+#about_card:hover #about_card_content {
+  box-shadow: 0px 29px 44px 0px rgba(150, 150, 150, 0.25);
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
